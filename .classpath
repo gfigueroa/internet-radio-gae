@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="war/WEB-INF/lib/org.restlet.ext.servlet.jar"/>
+	<classpathentry exported="true" kind="lib" path="war/WEB-INF/lib/org.restlet.jar"/>
+	<classpathentry exported="true" kind="lib" path="war/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="war/WEB-INF/lib/displaytag-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="war/WEB-INF/lib/displaytag-export-poi-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="war/WEB-INF/lib/displaytag-portlet-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="war/WEB-INF/lib/gson-2.2.1.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="war/WEB-INF/lib/appengine-api-labs.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

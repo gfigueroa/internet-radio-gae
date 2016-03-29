@@ -1,0 +1,520 @@
+ @charset "utf-8";
+/* CSS Document */
+
+
+/* Neutralize styling: 
+   Elements we want to clean out entirely: */
+   
+
+/*TAGS*/
+ 
+input[readonly] {
+   background-color: #FAFAFA;
+}
+textarea[readonly] {
+   background-color: #FAFAFA;
+}
+ 
+html { overflow: auto; height:100%;
+        margin: 0;
+        padding: 0;
+       
+}
+
+ body, form, fieldset {
+        margin: 0;
+        padding: 0;
+        font-family:arial;
+        
+
+}
+
+body h1{
+	margin:0 20px 10px 20px;
+	border-bottom:2px solid #0173cd;
+	color:#1e6dab;
+	
+}
+
+
+/* Neutralize styling: 
+   Elements with a vertical margin: */
+h1, h2, h3, h4, h5, h6, p, pre,
+blockquote, ul, ol, dl, address {
+        margin: .3em 0;
+        padding: 0;
+}
+
+/* Apply left margin:
+   Only to the few elements that need it: */
+/*li, dd, blockquote {
+        margin-left: 1em;
+}*/
+
+/* Miscellaneous conveniences: */
+form label {
+	/*color:#333333;*/
+	font-size:12px;
+	color:#333333;
+	padding:10px;
+}
+
+.list-table{
+
+	padding:0px 20px;
+	font-size:14px;
+	
+}
+.list-table a{
+	color:#15629e;
+	text-decoration:none;
+	
+}
+.list-table a:hover{
+	color:#6897bc;
+	text-decoration:underline;
+	
+}
+
+.list-table tr td{
+	border-bottom:1px dotted #0173cd;
+	padding:7px;
+	font-size:14px;
+}
+
+.list-table tr:nth-child(odd) td{
+	
+	background-color: #cce9ff;
+	font-size:14px;
+}
+
+.list-table tr td:nth-child(1) {
+	
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+	
+}
+ 
+a.back-link{
+	font-size:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-left:1075px;
+}
+
+a.back-link-RS{
+	font-size:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-left:1020px;
+}
+
+
+fieldset {
+        border: none;
+}
+input, select, textarea {
+    font-size: 100%;
+	border: 1px solid #B5B8C8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	padding:2px;
+	font-size:12px; ;
+}
+
+hr {
+border: 0;
+width: 100%;
+background-color: #CCCCCC;
+height: 1px;
+border-width:1px;
+color:#CCCCCC;
+}
+
+div.treeview {
+display:none;
+}
+
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+/*****************************************
+*										*
+*		 form-style Class Forms		    *
+*										*
+*****************************************/
+
+
+form.form-style {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 10px;
+	border: 1px solid #A5A8B8;
+	margin-left:200px;
+	margin-right:20px;
+	width:70%;
+	text-align:inherit;
+}
+#colorbox form.form-style {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 10px;
+	border: 1px solid #A5A8B8;
+	margin-left:20px;
+	margin-right:20px;
+	width:70%;
+	text-align:inherit;
+}
+
+
+textarea.input_extra_large{
+	height:90px;
+}
+
+.button
+{
+	margin-left:550px;
+   	padding:0px;
+   	background-color:transparent;
+   	border:none;
+   	cursor: pointer;
+	margin-top: -45px;
+	font-size: 14px;
+	
+}
+
+.img-button
+{
+	   border:0px;
+}
+
+.button_style {
+	margin-left:10px;
+   	margin-top: -48px;
+   	cursor: pointer;
+	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	box-shadow:inset 0px 0px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:13px 28px;
+	text-decoration:none;
+	text-shadow:1px -1px 0px #ffffff;
+}.button_style:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.button_style:active {
+	position:relative;
+	top:1px;
+}
+	
+.button-close {
+	margin-left:510px;
+	margin-top: 5px;
+	cursor: pointer;
+	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	box-shadow:inset 0px 0px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:13px 28px;
+	text-decoration:none;
+	text-shadow:1px -1px 0px #ffffff;
+}.button-close:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.button-close:active {
+	position:relative;
+	top:1px;
+}
+
+.button-print {
+	margin-left:830px;
+	cursor: pointer;
+	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	box-shadow:inset 0px 0px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:13px 28px;
+	text-decoration:none;
+	text-shadow:1px -1px 0px #ffffff;
+	//margin-top: -100px;
+}.button-print:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.button-print:active {
+	position:relative;
+	top:1px;
+}
+
+.button-mail {
+	margin-left:918px;
+	margin-top: -47px;	
+	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	box-shadow:inset 0px 0px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:13px 28px;
+	text-decoration:none;
+	text-shadow:1px -1px 0px #ffffff;
+
+}.button-mail:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.button-mail:active {
+	position:relative;
+	top:1px;
+}
+	
+.form-style fieldset {
+	font-size: 14px;
+	padding : 10px;
+	border: 1px solid #B5B8C8;
+	float:left;
+	width:80%;
+	margin-right:10px;
+	margin-left:10px;
+	margin-bottom: 5px;
+	background:#FFF; 
+
+
+}
+
+
+.form-style legend {
+	font-size: 20px;
+	color: #15428B;
+	font-weight: 900;
+}
+
+.form-style fieldset label {
+	text-align: inherit;
+	color: #3D3D3D;
+	font-weight: bold;
+	display: block;
+	width: 250px;
+	float: left;
+	clear:left;
+	padding:4px;
+	font-family: Tahoma, Geneva, sans-serif;
+	
+}
+
+.form-style hr {
+	clear: both;
+
+}
+
+.form-style .text-input {
+	width: 250px;
+	color: #333333;
+	padding: 4px;
+	border: 1px solid #B5B8C8;
+	font-size: 15px;
+	margin-top: 4px;
+	background: #FFFFFF;
+}
+
+.form-style br {
+	clear: both;
+	visibility: hidden;
+}
+
+
+
+
+/*----------------*/
+
+.form-style  .i {
+	float:left;
+	padding:0 10px 0 0;
+	}
+	 .form-style  .j {
+	float:left;
+	padding:0 10px 0 0;
+	}
+	
+
+.input_extra_large{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #333333;
+	width:400px;
+	visibility: visible;
+}
+ 
+.input_large{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #333333;
+	width:200px;
+	visibility: visible;
+} 
+ 
+.input_small{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #333333;
+	width:100px;
+	visibility: visible;
+}
+
+.input_extra_small{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #333333;
+	width:50px;
+	visibility: visible;
+} 
+
+.input_textarea{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #333333;
+	width:90%;
+
+}
+
+
+.menu-layout {
+	
+	width:100%;
+	background-color: black;
+	color: #cdcdcd;
+	padding:10px 0;
+	margin-bottom:10px;
+	
+	}
+.menu-layout a {
+	padding:0 15px;
+	color: #cdcdcd;
+	text-decoration:none;
+
+	
+	}	
+	
+.menu-layout a:hover
+{
+	color: #4d4d4c;
+
+} 
+#logo-banner {
+	background-image:url("../images/LOGO.jpg");
+	background-color:DarkSlateGray;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:100%;
+	height:50px;
+	padding-bottom:10px;
+	clear:both;
+}
+
+.error-div {
+	font-size: 12px;
+	color: red;
+}
+
+.success-div {
+	font-size: 12px;
+	color: green;
+}
+
+.warning-div {
+	font-size: 12px;
+	color: red;
+}
+
+div.language_bar {
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:center;
+	padding-top:100px;
+	clear:both;
+	}
+
+#page-footer {
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:center;
+	padding-top:25px;
+	clear:both;
+	}
+
+.logout-bar{
+	position: relative;
+}
+.language-bar{
+	position: relative;
+}
+.logout-bar-image{
+	position:absolute;
+	right:0px;
+}
+
+/* High resolution mobile devices (Android only?) */
+@media screen and (-webkit-device-pixel-ratio: 1.5) {
+    /* CSS for high-density screens */
+    
+    /* drop the left margin to 10 px */
+    form.form-style {
+	    margin-left:10px;
+    }
+}

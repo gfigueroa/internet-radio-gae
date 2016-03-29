@@ -1,0 +1,160 @@
+html, body
+{
+    height:100%;
+	margin:0;
+}
+body
+{
+    font-size: 62.5%;
+    font-family: "Helvetica Neue","Helvetica,Arial,sans-serif";
+    text-transform: capitalize;
+}
+#container
+{
+	height: 100%;
+}
+#slideShow
+{ 
+	width: 100%; 
+	height: 79%; 
+	background-color: #c5dbec;
+}
+.marquee
+{
+	height: 7%;
+	/*text-align: center;*/
+	font-size: 2.4em;
+	background-color:#c5dbec;
+	overflow:hidden;
+	position: relative;
+}
+.marquee div
+{
+	display: block;
+    width: 200%;
+    height: 100%;
+	position: absolute;
+	overflow: hidden;
+    -webkit-animation: marquee 20s linear infinite;
+    -moz-animation: marquee 20s linear infinite;
+    -ms-animation: marquee 20s linear infinite;
+    -o-animation: marquee 20s linear infinite;
+    animation: marquee 20s linear infinite;
+}
+.marquee span
+{
+	float: left;
+    width: 50%;
+}
+@-webkit-keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+@-moz-keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+@-ms-keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+@-o-keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+#mainTrackContainer
+{
+	background-color:#c5dbec;
+	height: 14%;
+}
+#jp_container_1
+{
+	display:none;
+}
+#jp_container_2
+{
+	display:none;
+}
+#jp_container_1_2
+{
+	display:none;
+}
+#facebookShare1, #facebookShare2
+{
+	text-indent: 0;
+	border-color: #29447e #29447e #1a356e;
+	background: #5b74a8;
+	color: white;
+	margin-left: 10px;
+}
+#facebookShare1 span, #facebookShare2 span
+{
+	padding: .3em 0.4em !important;
+}
+#facebookShare1 img, #facebookShare2 img
+{
+	position: relative;
+	top: 4px;
+	border: 0;
+}
+#playAgain
+{
+	position: absolute;
+    z-index: 3;
+    opacity: 0.9;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    background-color: #eee;
+    display:none;
+}
+#clientLogoContainer1, #clientLogoContainer2
+{
+	float: right;
+	margin-top:-10px;
+}
+#clientLogo1, #clientLogo2
+{
+	text-indent: 0;
+	cursor: default;
+	line-height: 0;
+}
+#clientLogo1 img, #clientLog2 img
+{
+	border: 0;
+}
+#playAgain div
+{
+	position: relative;
+    z-index: 4;
+    background: url('/js/djPlayer/Player/skin/blue.monday/jplayer.blue.monday.jpg') 0 -290px no-repeat;
+    height: 16px;
+    width: 23px;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+}
+#playAgain div:hover
+{
+	background: url('/js/djPlayer/Player/skin/blue.monday/jplayer.blue.monday.jpg') -30px -290px no-repeat;
+}
+#clickToReplay
+{
+	position: relative !important;
+	z-index: 4 !important;
+	top: 52% !important;
+	left: 45% !important;
+	background: none !important;
+	width: 150px !important;
+	text-align: center !important;
+	font-size: 2.2em !important;
+	height: auto !important;
+}
+#templates
+{
+	display:none;
+}

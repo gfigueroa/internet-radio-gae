@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+version="2.5">
+
+    <!-- Session management servlets -->
+	<servlet>
+	    <servlet-name>SessionCreator</servlet-name>
+	    <servlet-class>
+	    	servlets.CreateSessionServlet
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>SessionCreator</servlet-name>
+	    <url-pattern>/attemptlogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionCreator</servlet-name>
+	    	<url-pattern>/handleSession</url-pattern>
+	</servlet-mapping>
+	<!-- End of Session management   -->
+    
+    <!-- Managing Users servlet -->
+  	<servlet>
+	    <servlet-name>ManageUser</servlet-name>
+	    <servlet-class>
+	      servlets.ManageUserServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>ManageUser</servlet-name>
+	    <url-pattern>/manageUser</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Managing Users  -->
+    
+    <!-- Managing Stations servlets -->
+  	<servlet>
+    	<servlet-name>ManageStation</servlet-name>
+    	<servlet-class>
+      		servlets.ManageStationServlet
+    	</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>ManageStation</servlet-name>
+    	<url-pattern>/manageStation</url-pattern>
+	</servlet-mapping>
+    	
+  	<servlet>
+	    <servlet-name>StationUpload</servlet-name>
+	    <servlet-class>
+	    	servlets.StationUploadServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>StationUpload</servlet-name>
+	    <url-pattern>/stationUpload</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+	    <servlet-name>ManageProgram</servlet-name>
+	    <servlet-class>
+	    	servlets.ManageProgramServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>ManageProgram</servlet-name>
+	    <url-pattern>/manageProgram</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Managing Stations  -->
+	
+	<!-- Managing Global Objects servlet -->
+  	<servlet>
+	    <servlet-name>ManageObject</servlet-name>
+	    <servlet-class>
+	      servlets.ManageGlobalObjectsServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>ManageObject</servlet-name>
+	    <url-pattern>/manageObject</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Managing Global Objects  -->
+  	
+  	<!-- Manage System servlet -->
+  	<servlet>
+	    <servlet-name>ManageSystem</servlet-name>
+	    <servlet-class>
+	      servlets.ManageSystemServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>ManageSystem</servlet-name>
+	    <url-pattern>/manageSystem</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Manage System  -->
+	
+	<!-- Serve Files and Images servlets -->
+  	<servlet>
+    	<servlet-name>FileDownload</servlet-name>
+    	<servlet-class>servlets.FileDownloadServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>FileDownload</servlet-name>
+    	<url-pattern>/fileDownload</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+    	<servlet-name>img</servlet-name>
+    	<servlet-class>servlets.ImageServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>img</servlet-name>
+    	<url-pattern>/img</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+    	<servlet-name>audioStreaming</servlet-name>
+    	<servlet-class>servlets.AudioStreamingServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>audioStreaming</servlet-name>
+    	<url-pattern>/audioStreaming</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Serve Images -->
+  	
+  	  <!-- Servlet and mapping for REST services -->
+  	<servlet>
+    	<servlet-name>RestletServlet</servlet-name>
+    	<servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+    	<init-param>
+      		<param-name>org.restlet.application</param-name>
+      		<param-value>webservices.ExternalApplication</param-value>
+    	</init-param>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>RestletServlet</servlet-name>
+    	<url-pattern>/rest/*</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of REST declarations -->
+  	
+  	<!-- Mobile App Servlets -->
+  	<servlet>
+	    <servlet-name>MobileApp</servlet-name>
+	    <servlet-class>
+	      servlets.MobileAppServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>MobileApp</servlet-name>
+	    <url-pattern>/mobile</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+	    <servlet-name>CloudSync</servlet-name>
+	    <servlet-class>
+	      servlets.CloudSyncServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>CloudSync</servlet-name>
+	    <url-pattern>/cloudSync</url-pattern>
+  	</servlet-mapping>
+  	<!-- End of Mobile App Servlets  -->
+	
+	<!-- Upload File Servlets -->
+	<servlet>
+	    <servlet-name>BinaryFileUpload</servlet-name>
+	    <servlet-class>
+	      servlets.BinaryFileUploadServlet
+	    </servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+	    <servlet-name>BinaryFileUpload</servlet-name>
+	    <url-pattern>/binaryFileUpload</url-pattern>
+  	</servlet-mapping>
+	<!-- End Upload File Servlets -->
+	
+	<!-- Email Notification Servlet -->
+	<servlet>
+	    <servlet-name>EmailNotification</servlet-name>
+	    <servlet-class>
+	      servlets.EmailNotificationServlet
+	    </servlet-class>
+  	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmailNotification</servlet-name>
+		<url-pattern>/emailNotification</url-pattern>
+	</servlet-mapping>
+	<!-- End Email Notification Servlet -->
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<error-page>
+        <error-code>500</error-code>
+        <location>/errors/servererror.jsp</location>
+    </error-page>
+	
+</web-app>

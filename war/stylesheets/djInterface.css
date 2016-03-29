@@ -1,0 +1,548 @@
+html, body
+{
+    height:100%;
+	margin:0;
+}
+body
+{
+    font-size: 62.5%;
+    font-family: "Helvetica Neue","Helvetica,Arial,sans-serif";
+    text-transform: capitalize;
+}
+
+#galleria
+{ 
+	width: 100%; 
+	height: 80%; 
+	background: #c5dbec;
+}
+#container
+{
+	/*width:100%;*/
+	height:100%;
+    /*min-height:100%;*/
+}
+/*
+#ddtopmenubar li:nth-child(n+3)
+{
+	display:none;
+}
+*/
+#header
+{
+    /*height:10%;*/
+}
+#header h1
+{
+	background-color:brown;
+	margin:0;
+    /*height:100%;*/
+    font-size:3em;
+}
+#slidesSearcherDialog
+{
+	display:none;
+}
+#stationContainer/*#mainTrackContainer*/
+{
+	float:left;
+	background:#2e6e9e;
+	/*min-height:80%;*/
+	height:88.1%;
+	width:20%;
+}
+#slideSearcherBtnContainer
+{
+	float:left;
+}
+#slideSearcherBtn
+{
+	height: 32px;
+	width: 32px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+#slidesTimeMarkContainer
+{
+	height: 15px;
+	width: 94.8%;
+	background-color: #019be3;
+	margin-left: 5px;
+	margin-top: 10px;
+	float: left;
+	position: relative;
+}
+#slideFileTypeError
+{
+	display:none;
+	color:red;
+}
+#mainTrackFileTypeError
+{
+	display:none;
+	color:red;
+}
+#secondaryTrackFileTypeError
+{
+	display:none;
+	color:red;
+}
+#slideMarker
+{
+	margin-left: 10px;
+	width: 30px;
+	height: 30px;
+}
+.slideTimeMark
+{
+	height: 100%;
+	width: 1%;
+	background-color: #2e6e9e;
+	float:left;
+	cursor: e-resize;
+	position: absolute !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #dfeffc;
+}
+#secondarySearcherBtnContainer
+{
+	float: left;
+}
+#secondaryTrackTimeMarkContainer
+{
+	height: 15px;
+	width: 94.8%;
+	background-color: #019be3;
+	margin-left: 5px;
+	margin-top: 10px;
+	float: left;
+	position: relative;
+}
+.secondaryTrackTimeMark
+{
+	height: 100%;
+	width: 1%;
+	background-color: #2e6e9e;
+	float:left;
+	cursor: e-resize;
+	position: absolute !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #dfeffc;
+}
+#selectSlidesFilesBtn
+{
+    width:auto;
+}
+#slidesFormContainer
+{
+    margin-top:10px;
+}
+/*#slidesBtnContainer
+{
+    margin-top:10px;
+}
+#slidesSongBtn
+{
+    margin-left:1px;
+}*/
+#slidesProgressbar
+{
+    margin-top:15px;
+}
+/*#mainTrackMenuContainer
+{
+    display:none;
+}*/
+#mainTrackProgressbar
+{
+    margin-top:15px;
+}
+.programDurationMark
+{
+	width: 1%;
+	height: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #dfeffc;
+	background-color: #2e6e9e;
+	position: absolute !important;
+	left: 1012px;
+	top: 0px;
+	display:none;
+}
+#secondaryTrackMarker
+{
+	margin-left: 5px;
+	width: 30px;
+	height: 30px;
+}
+#saveProgramBtn
+{
+	margin-left: 5px;
+	width: 30px;
+	height: 30px;
+}
+#facebookShare
+{
+	text-indent: 0;
+	border-color: #29447e #29447e #1a356e;
+	background: #5b74a8;
+	color: white;
+	margin-left: 5px;
+}
+#facebookShare span
+{
+	padding: .3em 0.4em !important;
+}
+#facebookShare img
+{
+	position: relative;
+	top: 4px;
+	margin-left: 5px;
+	border: 0;
+}
+#popupMessage
+{
+	display: none;
+}
+#secondarySearcherBtn
+{
+	height: 32px;
+	width: 32px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+#clientLogoContainer
+{
+	float: right;
+}
+#clientLogo
+{
+	text-indent: 0;
+	cursor: default;
+	line-height: 0;
+}
+#clientLogo img
+{
+	border: 0;
+}
+#secondaryTrackProgressbar
+{
+    margin-top:15px;
+}
+#songSearcherBtn
+{
+    height: 32px; 
+}
+#personalLibraryFormContainer
+{
+	margin-top:10px;
+}
+#selectFilesBtn
+{
+    width:auto;
+}
+#selectSecondaryFilesBtn
+{
+    width:auto;
+}
+#jp_container_2
+{
+    display:none;
+}
+#jp_container_3
+{
+	display:none;
+}
+/*#personalSongBtnContainer
+{
+    margin-top:10px;
+}
+#personalSongBtn
+{
+    margin-left:1px;
+}*/
+#secondaryFormContainer
+{
+    margin-top:10px;
+}
+#secondaryTrackMenuContainer
+{
+    display:table;
+    width:100%;
+}
+.secondaryTrackRow
+{
+    display:table-row;
+    height:45px;
+}
+#slidesSubContainer div
+{
+	float: left;
+}
+#programBannerContainer
+{
+	margin-top: 0.5%;
+	width: 93%;
+}
+#programBanner
+{
+	background-color: #c5dbec;
+
+	border: none;
+	margin-top: 0px;
+	width: 100%;
+	text-align: center;
+
+}
+#programForm div
+{
+	margin-top: 5px;
+}
+#validationMessage
+{
+	color: red;
+}
+#selectMessage span
+{
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+#programForm fieldset
+{
+	border: none;
+	padding: 0;
+}
+#programForm input.text, textarea.text
+{ 
+	margin-bottom:12px;
+	width:95%; 
+	padding: .4em;
+	text-align: center;
+}
+#programForm textarea
+{
+	height: 50px;
+}
+#programBanner:focus
+{
+	outline-color: #019be3;
+}
+.secondaryTrackRow.header
+{
+	height: 30px;
+}
+.secondaryTrackRow div
+{
+    display:table-cell;
+}
+.secondaryTrackName
+{
+    width:20%;
+    cursor: pointer;
+}
+.secondaryTrackName span
+{
+    width:85%;
+}
+/*.secondaryTrackDuration
+{
+    width: 5%;
+}
+.secondaryTrackDuration span
+{
+    width: 85%;
+}*/
+.secondaryTrackPosition
+{
+    width:20%;
+}
+.secondaryTrackPosition span
+{
+    width:85%;
+}
+.secondaryTrackFadePercentage
+{
+    width:20%;
+}
+.secondaryTrackFadePercentage span
+{
+    width:85%;
+}
+.secondaryTrackFadeStep
+{
+    width:20%;
+}
+.secondaryTrackFadeStep span
+{
+    width:85%;
+}
+.secondaryTrackFadeDuration
+{
+    width:20%;
+    display:none !important;
+}
+.secondaryTrackFadeDuration span
+{
+    width:85%;
+}
+/*#secondarySongBtnContainer
+{
+    margin-top:10px;
+}*/
+/*#secondarySongBtn
+{
+    margin-left:1px;
+}*/
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  font-size: 23px;
+  direction: ltr;
+  cursor: pointer;
+}
+#providedLibraryFormContainer
+{
+	display:none;
+	margin-top:10px;
+}
+#controlBox
+{
+	height:80%;
+	width: 80%;
+	float:left;
+}
+
+#refreshControlContainer
+{
+	height:100%;
+	width: 100%;
+	float:left;
+}
+
+#slideContainer
+{
+	background-color:#c5dbec;
+	/*height:320px;*/
+    height:50%;
+	clear:both;
+}
+#slidesEditBtn
+{
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#secondaryTrackEditBtn
+{
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#audioContainer
+{
+	background-color:red;
+	/*height:120px;*/
+    /*height:20%;*/
+	clear:both;
+}
+#secondaryTrackContainer
+{
+	background-color:#c5dbec;
+	min-height:33.4%;
+	font-size:1.5em;
+    /*min-height:60px;*/
+}
+#secondaryTrackContainer span
+{
+	display:block;
+}
+#trackCollisionMessage
+{
+    display:none;
+}
+.collision
+{
+    background-color:#f58400;
+}
+#templates
+{
+    display:none;
+}
+#footer
+{
+	background-color:orange;
+	clear:both;
+	height:10%;
+}
+#logo-banner {
+	background-image:url("../images/LOGO.jpg");
+	background-color:DarkSlateGray;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:100%;
+	height:50px;
+	padding-bottom:10px;
+	clear:both;
+}
+#page-footer {
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:center;
+	padding-top:25px;
+	clear:both;
+	}
+
+.logout-bar{
+	position: relative;
+}
+.language-bar{
+	position: relative;
+}
+.logout-bar-image{
+	position:absolute;
+	right:0px;
+}
+
+div.language_bar {
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:center;
+	padding-top:100px;
+	clear:both;
+	}
+	
+.ajax_loader1 {background: url("../images/spinner_squares_circle.gif") no-repeat center center transparent;width:100%;height:100%;}
+.ajax_loader2 {background: url("../images/spinner_squares_circle.gif") no-repeat center center transparent;width:100%;height:100%;}
+
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* half width of the spinner gif */
+    margin-top: -50px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:1234;
+    overflow: auto;
+    width: 100px; /* width of the spinner gif */
+    height: 102px; /*hight of the spinner gif +2px to fix IE8 issue */
+}

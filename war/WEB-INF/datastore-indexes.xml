@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes autoGenerate="true">
+    
+    <datastore-index kind="Channel" ancestor="true" source="manual">
+        <property name="channels_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Playlist" ancestor="true" source="manual">
+        <property name="playlists_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="StationAudio" ancestor="true" source="manual">
+        <property name="stationAudios_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="StationImage" ancestor="true" source="manual">
+        <property name="stationImages_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Program" ancestor="true" source="manual">
+        <property name="programs_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="SecondaryTrack" ancestor="true" source="manual">
+        <property name="secondaryTracks_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Slide" ancestor="true" source="manual">
+        <property name="slides_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+    
+    <!-- 
+    Beta version
+    -->
+    <datastore-index kind="UserGroup" ancestor="true" source="manual">
+        <property name="ownedUserGroups_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="UserRecommendation" ancestor="true" source="manual">
+        <property name="userRecommendations_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="UserRecommendationRecipient" ancestor="true" source="manual">
+        <property name="userRecommendationRecipients_INTEGER_IDX" direction="asc"/>
+    </datastore-index>
+    
+</datastore-indexes>
