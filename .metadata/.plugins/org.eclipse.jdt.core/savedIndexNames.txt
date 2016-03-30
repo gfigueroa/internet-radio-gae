@@ -1,1 +1,0 @@
-INDEX VERSION 1.126+C:\Users\ISLAB_AEGA\Dropbox\cloudDrink\source code\COS_GAE\CloudOrderingSystem - v1.1.0\.metadata\.plugins\org.eclipse.jdt.core
